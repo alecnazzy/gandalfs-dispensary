@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hello from React!</h1>
+      <h1>Request from server:</h1>
       <p>{data.message}</p>
     </div>
   );
