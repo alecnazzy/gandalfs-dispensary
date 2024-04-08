@@ -1,19 +1,24 @@
-import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import RootLayout from "./layouts/RootLayout";
+
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import About from "./pages/About";
+import Cart from "./pages/Cart";
 
 function App() {
-  const [data, setData] = useState([{}]);
-
-  useEffect(() => {
-    fetch("https://gandalfs-dispensary.onrender.com/api")
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
-
   return (
-    <div>
-      <h1>Request from server:</h1>
-      <p>{data.message}</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/cart" element={<Cart />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
