@@ -23,7 +23,7 @@ const Footer = () => {
       }`}
     >
       <div className="flex items-center">
-        <span>2024 &copy; Gandalf's Premium Pipeweed Dispensary</span>
+        <span>2024 &copy; Gandalf's Dispensary</span>
         <img src="bouncing-arrow.gif" alt="arrow" className="w-12 h-12 ml-4" />
       </div>
 

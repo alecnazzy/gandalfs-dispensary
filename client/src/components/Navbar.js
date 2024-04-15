@@ -6,28 +6,28 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-row justify-between items-center">
           <img
-            src="nav-title.png"
-            alt="Gandalf's Premium Pipeweed Dispensary"
-            className="w-4/12 h-auto"
+            src="navbar-title.png"
+            alt="Gandalf's Dispensary"
+            className="w-2/12 h-auto"
           />
           <ul className="flex space-x-4">
             <li>
-              <a href="/" className="text-md mx-2">
+              <a href="/" className="text-sm mx-2">
                 Home
               </a>
             </li>
             <li>
-              <a href="/products" className="text-md mx-2">
+              <a href="/products" className="text-sm mx-2">
                 Products
               </a>
             </li>
             <li>
-              <a href="/about" className="text-md mx-2">
+              <a href="/about" className="text-sm mx-2">
                 About
               </a>
             </li>
             <li>
-              <a href="/cart" className="text-md mx-2">
+              <a href="/cart" className="text-sm mx-2">
                 Cart
               </a>
             </li>
