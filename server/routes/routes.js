@@ -2,10 +2,8 @@ const express = require("express");
 const Products = require("../models/products");
 const router = express.Router();
 
-const apiKey = process.env.API_KEY;
-
 // GET ALL
-router.get("/products/" + apiKey, async (req, res) => {
+router.get("/products/", async (req, res) => {
   try {
     const data = await Products.find();
     res.json(data);
@@ -15,7 +13,7 @@ router.get("/products/" + apiKey, async (req, res) => {
 });
 
 // GET ID
-router.get("/products/:id/" + apiKey, async (req, res) => {
+router.get("/products/:id/", async (req, res) => {
   const productId = req.params.id;
 
   try {

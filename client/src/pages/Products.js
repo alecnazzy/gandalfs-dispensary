@@ -10,9 +10,8 @@ export default function Products() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiKey = process.env.REACT_APP_API_KEY;
         const apiUrl = process.env.REACT_APP_API_URL;
-        const url = `${apiUrl}/${apiKey}`;
+        const url = `${apiUrl}`;
         const response = await fetch(url);
         if (!response.ok) {
           throw new Error("Network response was not ok");
