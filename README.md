@@ -11,7 +11,7 @@
 ## Table of Contents
 
 - [Description](#description)
-- [Features](#features)
+- [Features](#completed-features)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [Contributing](#contributing)
