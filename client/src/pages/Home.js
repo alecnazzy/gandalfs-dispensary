@@ -1,6 +1,8 @@
 import React from "react";
 import ReviewCard from "../components/ReviewCard";
 import ProductCarousel from "../components/ProductCarousel";
+import Slider from "../components/Slider";
+import PopupComponent from "../components/PopupComponent";
 
 export default function Home() {
   const photos = [
@@ -12,6 +14,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center h-full relative">
+      <PopupComponent />
       {/* Product Showcase */}
       <div className="flex flex-row w-full h-full">
         <div className="w-1/3 h-full relative hover:cursor-pointer">
@@ -32,7 +35,7 @@ export default function Home() {
         <div className="w-1/3 h-full relative cursor-pointer">
           <div className="relative">
             <img
-              src="paraphernalia.png"
+              src="pipe.png"
               alt="placeholder"
               className="w-full h-auto object-cover"
             />
@@ -61,33 +64,30 @@ export default function Home() {
       </div>
       {/* End Product Showcase */}
 
-      {/* Limited Edition Showcase */}
-      {/* <h1 className="mt-36">Limited Edition</h1> */}
-      <img
-        src="limited-title.png"
-        alt="limited edition"
-        className="mt-36 w-2/12 h-auto mb-4"
-      />
+      {/* Featured Showcase */}
       <div className="flex flex-row justify-center items-center mt-12">
         <div className="w-4/12 h-auto">
           <ProductCarousel photos={photos} />
         </div>
         <div className="text-center w-4/12 ml-24">
-          <h1 className="text-2xl">Dwarf Pipe</h1>
-          <p>
-            Crafted with the essence of the Dwarve's rich heritage, each pipe
-            captures the spirit of dwarven craftsmanship. Get yours while deal
+          <h1 className="text-2xl">Gimli's Fireforge Pipe</h1>
+          <p className="mt-4">
+            Handcrafted with the essence of the Dwarve's rich heritage, each
+            pipe captures the spirit of dwarven craftsmanship and comes in four
+            variants. This is a limited time deal so get yours while stock
             lasts!
           </p>
-          <button className="mt-8 bg-white hover:bg-gray-100 text-black shadow-md font-bold py-2 px-4 rounded-xl">
-            Shop Now
-          </button>
+          <a href="/661854f68dca3295559815a9">
+            <button className="mt-8 bg-white hover:bg-gray-100 text-black shadow-md font-bold py-2 px-4 rounded-xl">
+              Shop Now
+            </button>
+          </a>
         </div>
       </div>
-      {/* End Limited Edition Showcase */}
+      {/* End Featured Showcase */}
 
       {/* Customer Reviews */}
-      <div className="mt-36 mb-32 flex flex-col justify-center align-center items-center">
+      <div className="mt-24 mb-32 flex flex-col justify-center align-center items-center">
         <img
           src="customer-review-title.png"
           alt="reviews"

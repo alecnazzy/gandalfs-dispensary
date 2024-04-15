@@ -6,7 +6,9 @@ export default function ProductCard({ product }) {
       <img src={product.image} alt={product.name} className="w-full" />
       <div className="px-6 py-4">
         <div className="text-xl mb-2">{product.name}</div>
-        <p className="text-gray-900 text-lg mt-2">${product.price}</p>
+        <p className="text-gray-900 text-lg mt-2">
+          {product.price} copper pennies
+        </p>
       </div>
       <div className="px-6 py-4">
         <button className="bg-white hover:bg-gray-100 text-black shadow-md font-bold py-2 px-4 rounded-xl">

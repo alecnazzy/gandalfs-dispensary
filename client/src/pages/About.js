@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
+import Slider from "../components/Slider";
 
 export default function About() {
   //
@@ -30,8 +31,8 @@ export default function About() {
         </div>
         <div className="md:w-1/2 md:pl-8">
           <p className="text-lg mb-4">
-            Welcome to Gandalf's Premium Pipeweed Dispensary, your one-stop shop
-            for the finest pipeweed and paraphernalia in Middle-earth!
+            Welcome to Gandalf's Dispensary, your one-stop shop for the finest
+            pipeweed and paraphernalia in Middle-earth!
           </p>
           <p className="text-lg mb-4">
             Our mission is to provide premium-quality pipeweed sourced from the
@@ -42,9 +43,9 @@ export default function About() {
           </p>
           <p className="text-lg">
             Whether you're a seasoned pipe enthusiast or a curious hobbit
-            looking to indulge in the pleasures of the leaf, Gandalf's Pipeweed
-            Premium Dispensary has something for everyone. Browse our selection
-            and embark on a journey to relaxation and delight.
+            looking to indulge in the pleasures of the leaf, Gandalf's
+            Dispensary has something for everyone. Browse our selection and
+            embark on a journey to relaxation and delight.
           </p>
         </div>
       </div>
@@ -61,20 +62,8 @@ export default function About() {
           </h1>
           <h1 className="mb-8">Photos of our shop:</h1>
         </div>
-        <div
-          className={`flex flex-row justify-center align-center items-center transition-transform duration-1000 ${
-            isVisible ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <img src="shop.png" alt="shop1" className="w-8/12 h-auto my-4" />
-        </div>
-        <div
-          className={`flex flex-row justify-center align-center items-center transition-transform duration-1000 ${
-            isVisible ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <img src="shop2.png" alt="shop1" className="w-8/12 h-auto my-4" />
-        </div>
+        <Slider image="shop.png" />
+        <Slider image="shop2.png" />
       </div>
       {/* end shop photos */}
     </div>

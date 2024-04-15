@@ -13,7 +13,7 @@ export default function ProductCarousel({ photos }) {
   }, [photos.length]);
 
   return (
-    <div className="w-97 h-auto carousel-container">
+    <div className="w-97 h-auto rounded-lg carousel-container">
       <div
         className="carousel-wrapper"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
